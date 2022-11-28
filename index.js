@@ -80,13 +80,13 @@ function RandomNumber(start, end) {
 //         matches= matches + ((n-1)/2)
 //         n = n/2+1
 //     }
-//     
+    
 //         return matches
-//     
+    
 // };
 // var numberOfSteps = function(num) {
     
-//     for(let i = 0;num>i&& num!==0;i++){
+//     for(let i = 0;num>i&& num!=0;i++){
 //         if(num%2 == 0){
 //             num = num/2
 //         }
@@ -101,10 +101,10 @@ var subtractProductAndSum = function(n) {
     n=n.toString()
     let plus = 0
     let sum = 0
-    let dif = sun - plus
+    let dif = sum - plus
     for(let i = 0;i<n.length; i++){
-        let sum =
-        let plus = 
+         let sum = sum*n[i]
+         let plus = sum+n[i]      
 
     }
     return dif 
