@@ -131,13 +131,14 @@ h6 {
     justify-content: center;
     width: 800px;
     margin-top: 70px;
-    background-color: rgb(246, 43, 43);
-    border: 10px solid rgb(199, 199, 34);
-    color:rgb(244, 244, 20);
+    background-color: #CAFF6A;
+    border: 3px solid #314017;
+    color:#314017;
     font-size: 25px;
     font-weight: 400;
     padding: 50px;
     flex-direction: column;
+    border-radius: 30px;
 
 }
 .block-rules ul{
