@@ -91,6 +91,12 @@ h6 {
 *{
      font-family: 'Roboto', sans-serif;
 }
+body{
+    transform: scale(0.5,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .block__head1{
     display: flex ;
     justify-content:center ;
@@ -125,6 +131,16 @@ h6 {
     border: 3px solid #12920f;
     color: #FFFFFF;
     border-radius:30px;
+    transition-duration: 0.3s;
+}
+.block-button:hover{
+    cursor: pointer;
+    transition-duration: 0.3s;
+    background-color: hsl(262, 47%, 57%);
+    transform: translate(0,-5px);
+}
+.block-button:active{
+    background-color: hsl(262, 90%, 72%);
 }
 .block-rules{
     display: flex;
@@ -148,8 +164,7 @@ h6 {
     margin-top: 20px;
 }
 .block-form{
-    display: flex ;
-    justify-content:flex-start ;
+    text-align: center;
     border: 3px solid #44AB42;
     box-shadow: 2px;
     width: 600px;
@@ -174,4 +189,11 @@ h6 {
     font-weight: 400;
     padding: 30px ;
     color: #7745a3;
+}
+.tip{
+   height:85px;
+
+}
+.correct,.less,.more{
+    display: none;
 }

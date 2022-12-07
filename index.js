@@ -4,28 +4,29 @@ function RandomNumber(start, end) {
 
 
 }
-// console.log(RandomNumber(0, 100))
-// let NumberAttempts = document.querySelector("#p")
-// let n = RandomNumber(0, 100)
-// let i = 0
-// let attempts=0
-// while (true) {
-//     let guessNumber = prompt("Попробуйте угадать число от 0 до 100")
-//     if (n > guessNumber) {
-//         console.log("загаданное число больше")
-//     }
-//     else if (n < guessNumber) {
-//         console.log("загаданное число меньше")
-//     }
-//     else if (n == guessNumber) {
-//         console.log("Вы угадали число")
-//         break
-//     }
-// i++
-// attempts=attempts+1
+function buttonClick(){
+    console.log("click")
+    let value = Number(inputNumber.value)
+    console.log(`${value}`)
+    if(n==value){
+        correctMassage.style.display="block"
+    }
+    else{
 
-//     NumberAttempts.innerHTML.style="Колличестов попыток:"+ i
-// }
+    }
+}
+
+
+let numberAttempts = document.querySelector("#attempts")
+let button = document.querySelector(".block-button")
+let inputNumber = document.querySelector("#form")
+let correctMassage = document.querySelector(".correct")
+let n = RandomNumber(0, 10)
+console.log(`${n}`)
+let attempts=0
+
+button.onclick=buttonClick
+
 // let x = 1222;
 // x = x.toString()
 // let Output = false;
@@ -97,15 +98,15 @@ function RandomNumber(start, end) {
 //     }
 //     return i
 // };
-var subtractProductAndSum = function(n) {
-    n=n.toString()
-    let plus = 0
-    let sum = 0
-    let dif = sum - plus
-    for(let i = 0;i<n.length; i++){
-         let sum = sum*n[i]
-         let plus = sum+n[i]      
+// var subtractProductAndSum = function(n) {
+//     n=n.toString()
+//     let plus = 0
+//     let sum = 0
+//     let dif = sum - plus
+//     for(let i = 0;i<n.length; i++){
+//          let sum = sum*n[i]
+//          let plus = sum+n[i]      
 
-    }
-    return dif 
-}
+//     }
+//     return dif 
+// }

@@ -25,21 +25,28 @@
                 автоматически.</li>
             <p>Желаем удачи!</p>
         </div>
+        <div class="tip">
+            <div class="correct">Вы угадали число</div>
+            <div class="less"> Загаданное число меньше</div>
+            <div class="more">Загаданное число больше</div>
+        </div>
         <div class="hearts">
 
         </div>
-        <form action=""type="text" aria-placeholder="Введите свое число" class="block-form"></form>
+        <form action="" >
+            <input type="text" placeholder="Введите свое число" class="block-form" id="form">
+        </form>
         <div class="block-button">
             <p>Угадай число!</p>
         </div>
-        <div class="correct"></div>
+        
         <div class="number"></div>
-        <div class="block-count">
-            <p>Число попыток:</p>
+        <div class="block-count" id="">
+            <p id="attempts">Число попыток:</p>
         </div>
        
     </div>
-
+<script src="index.js"></script>
 </body>
 
 </html>
