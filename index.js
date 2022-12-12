@@ -4,7 +4,28 @@ function RandomNumber(start, end) {
 
 
 }
+function ClearContent(){
+    less.style.display="none"
+    lose.style.display="none"
+    correctMassage.style.display="none"
+    more.style.display="none"
+    incorrect.style.display="none"
+}
+function isNumber (s){
+    let correctNumber = parseInt(s)
+    if(isNaN(correctNumber)){
+        return false
+    }
+    else{
+        return true
+    }
+}
 function buttonClick(){
+    ClearContent()
+   if(!isNumber(inputNumber.value)){
+    incorrect.style.display="block"
+    return
+   }
     console.log("click")
     let value = Number(inputNumber.value)
     console.log(`${value}`)
@@ -17,6 +38,15 @@ function buttonClick(){
     if(n<value){
         less.style.display="block"
     }
+   
+    attempts=attempts-1
+    numberAttempts.innerHTML=`Число попыток: ${attempts}`
+    if(attempts==0){
+        ClearContent()
+        lose.style.display = "block"
+        button.onclick=null
+        console.log("Вы проиграли")
+     }
 }
 
 
@@ -26,9 +56,12 @@ let inputNumber = document.querySelector("#form")
 let correctMassage = document.querySelector(".correct")
 let less = document.querySelector(".less")
 let more = document.querySelector(".more")
+let lose = document.querySelector(".lose")
+let incorrect=document.querySelector(".incorrect")
 let n = RandomNumber(0, 10)
 console.log(`${n}`)
-let attempts=0
+let attempts = 5 
+
 
 button.onclick=buttonClick
 

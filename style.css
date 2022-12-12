@@ -194,7 +194,7 @@ body{
    height:85px;
 
 }
-.correct,.less,.more{
+.correct,.less,.more,.lose,.incorrect{
     display: none;
 }
 .correct{
@@ -235,6 +235,32 @@ body{
     font-weight: 400;
     padding: 30px ;
     color: #872487;
+    border-radius: 20px;
+    text-align: center;
+}
+.lose{
+    border: 3px solid #70FDFF;
+    box-shadow: 5px;
+    width: 400px;
+    margin-top: 30px;
+     background-color: #BE275A;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 30px ;
+    color: #70FDFF;
+    border-radius: 20px;
+    text-align: center;
+}
+.incorrect{
+    border: 3px solid #70FDFF;
+    box-shadow: 5px;
+    width: 400px;
+    margin-top: 30px;
+     background-color: #BE275A;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 30px ;
+    color: #70FDFF;
     border-radius: 20px;
     text-align: center;
 }
