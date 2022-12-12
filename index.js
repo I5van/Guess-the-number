@@ -11,8 +11,11 @@ function buttonClick(){
     if(n==value){
         correctMassage.style.display="block"
     }
-    else{
-
+    if(n>value){
+        more.style.display="block"
+    }
+    if(n<value){
+        less.style.display="block"
     }
 }
 
@@ -21,6 +24,8 @@ let numberAttempts = document.querySelector("#attempts")
 let button = document.querySelector(".block-button")
 let inputNumber = document.querySelector("#form")
 let correctMassage = document.querySelector(".correct")
+let less = document.querySelector(".less")
+let more = document.querySelector(".more")
 let n = RandomNumber(0, 10)
 console.log(`${n}`)
 let attempts=0

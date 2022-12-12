@@ -197,3 +197,44 @@ body{
 .correct,.less,.more{
     display: none;
 }
+.correct{
+   
+    border: 3px solid #1F1B12;
+    box-shadow: 5px;
+    width: 400px;
+    margin-top: 30px;
+     background-color: #95f055;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 30px ;
+    color: #1F1B12;
+    border-radius: 20px;
+    text-align: center;
+}
+.less{
+    border: 3px solid #872487;
+    box-shadow: 5px;
+    width: 400px;
+    margin-top: 30px;
+     background-color: #F1E24E;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 30px ;
+    color: #872487;
+    border-radius: 20px;
+    text-align: center;
+
+}
+.more{
+    border: 3px solid #872487;
+    box-shadow: 5px;
+    width: 400px;
+    margin-top: 30px;
+     background-color: #F1E24E;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 30px ;
+    color: #872487;
+    border-radius: 20px;
+    text-align: center;
+}
