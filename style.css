@@ -264,3 +264,42 @@ body{
     border-radius: 20px;
     text-align: center;
 }
+.build-wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.build{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+.build-button{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    margin-top: 70px;
+    padding: 20px ; 
+    font-weight: 400;
+    font-size: 30px;
+    background-color: hsl(262, 64%, 64%);
+    border: 3px solid #12920f;
+    color: #FFFFFF;
+    border-radius:30px;
+    transition-duration: 0.3s;
+}
+.build-button1{
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    margin-top: 70px;
+    padding: 20px ; 
+    font-weight: 400;
+    font-size: 30px;
+    background-color: hsl(262, 64%, 64%);
+    border: 3px solid #12920f;
+    color: #FFFFFF;
+    border-radius:30px;
+    transition-duration: 0.3s;
+}
