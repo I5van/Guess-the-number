@@ -148,21 +148,21 @@ button.onclick=buttonClick
 //     }
 //     return dif 
 // }
-let k = prompt("Введите число")
-var isThree = function(n) {
-    for(let i=0;i<=n;i++){
-        if(k%i==0){
-            i=i+1
-        }
-        else {
-            i=i
-        }
+// let n = prompt("Введите число")
+// var isThree = function(n) {
+//     for(let i=0;i<=n;i++){
+//         if(k%i==0){
+//             i=i+1
+//         }
+//         else {
+//             i=i
+//         }
        
-    }
-    if(i==3){
-        return true;
-    }
-    else{
-        return false
-    }
-};
+//     }
+//     if(i==3){
+//         return true;
+//     }
+//     else{
+//         return false;
+//     }
+// };
