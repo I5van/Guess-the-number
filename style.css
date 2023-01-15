@@ -303,3 +303,12 @@ body{
     border-radius:30px;
     transition-duration: 0.3s;
 }
+.buttons   {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#true,#less,#more{
+    background-color: #70FDFF;
+}

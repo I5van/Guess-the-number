@@ -137,6 +137,8 @@ h6 {
     height: 200px;
     background-color: aliceblue;
     border-radius: 30px;
+    position: relative;
+    flex-direction: column;
 }
 .popup__button{
     display: flex;
@@ -159,5 +161,25 @@ h6 {
 
 }
 .close{
-    
+    position: absolute;
+    top:20px;
+    right: 20px;
+}
+.content .counter{
+    font-size: 40px;
+   
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#true,
+#less,
+#more {
+    background-color: #70FDFF;
+    display: block;
+    margin-top: 20px;
 }
