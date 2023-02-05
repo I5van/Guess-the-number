@@ -103,6 +103,7 @@ h6 {
     font-size: 25px;
     font-weight: 400;
     padding: 20px ;
+    color: black;
     
 
     
@@ -133,8 +134,8 @@ h6 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
     background-color: aliceblue;
     border-radius: 30px;
     position: relative;
@@ -167,6 +168,7 @@ h6 {
 }
 .content .counter{
     font-size: 40px;
+    text-align: center;
    
 }
 .buttons {
@@ -176,10 +178,45 @@ h6 {
     flex-direction: column;
 }
 
-#true,
-#less,
+
 #more {
-    background-color: #70FDFF;
     display: block;
     margin-top: 20px;
+    width :200px;
+    height: 50px;
+    background-color: #c1c70f;
+    border: solid 2px black;
+    border-radius:30px ;
+    color: black;
+}
+#less{
+    display: block;
+    margin-top: 20px;
+    width :200px;
+    height: 50px;
+    background-color: #d9e011;
+    border: solid 2px black;
+    border-radius:30px ;
+    color: black;
+}
+#true{
+    display: block;
+    margin-top: 20px;
+    width :200px;
+    height: 50px;
+    background-color: #83E281;
+    border: solid 2px #12920f;
+    border-radius:30px ;
+    color: #12920f;
+}
+.counter{
+    margin-top: -30px;
+}
+.attempts{
+    margin-top: 30px;
+}
+.attemots-p{
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
 }

@@ -6,24 +6,41 @@ let moreButton = document.querySelector("#more")
 let rightNumberButton = document.querySelector("#true")
 let right = 100
 let left = 0
+let i = 0
+let NumberOfAttempts=document.querySelector(".attempts-p")
 function less() {
     if(timerId != null){
         return
     }
+    if(left==right || Math.abs(left-right)==1){
+        counter.innerHTML="Такого быть не может, перезапустите игру!"
+        return
+    }
+
     right = Math.floor((left + right) / 2)
+    updateAttempts()
     animateNumbers()
 }
 function more() {
     if(timerId != null){
         return
     }
+    if(left==right || Math.abs(left-right)==1){
+        counter.innerHTML="Такого быть не может, перезапустите игру!"
+        counter.style.fontSize = "20px"
+        
+        return
+    }
     left = Math.floor((left + right) / 2)
+    updateAttempts()
     animateNumbers()
  
 
 }
 function rightNumber() {
+    
     counter.innerHTML = "Ура!!"
+   
 }
 
 let counter = document.querySelector(".counter")
@@ -54,6 +71,10 @@ function showPopup() {
 function closePopup() {
     popup.style.display = "none"
     clearInterval(timerId)
+}
+function updateAttempts(){
+    i = i+1
+    NumberOfAttempts.innerHTML="Колличестов попыток:"+i
 }
 button.addEventListener("click", showPopup)
 let closed = document.querySelector(".close")
